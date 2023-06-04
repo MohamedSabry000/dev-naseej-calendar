@@ -323,7 +323,7 @@ class ExtensionContent extends React.Component {
      * Manually calculates available vertical space for calendar
      */
     private getCalendarHeight(): number {
-        var height = document.getElementById("team-calendar");
+        var height = document.getElementById("naseej-calendar");
         if (height) {
             return height.offsetHeight - 90;
         }
@@ -551,7 +551,7 @@ class ExtensionContent extends React.Component {
 }
 
 function showRootComponent(component: React.ReactElement<any>) {
-    ReactDOM.render(component, document.getElementById("team-calendar"));
+    ReactDOM.render(component, document.getElementById("naseej-calendar"));
 }
 
 showRootComponent(<ExtensionContent />);

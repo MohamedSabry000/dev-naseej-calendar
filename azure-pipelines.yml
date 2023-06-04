@@ -4,13 +4,13 @@ variables:
 - name: minor
   value: '0'
 - name: extensionName
-  value: 'team-calendar'
+  value: 'naseej-calendar'
 - name: marketplaceServiceConnection
   value: 'marketplaceServiceConnection'
 - name: publisherId
   value: 'ms-devlabs'
 - name: publicExtensionName
-  value: "Team Calendar"
+  value: "Naseej Calendar"
 
 name: $(major).$(minor)$(rev:.r)
 

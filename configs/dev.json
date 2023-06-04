@@ -1,7 +1,8 @@
 {
-    "public": false,
-    "baseUri": "https://localhost:8888",
-    "name": "Team Calendar (Dev)",
-    "publisher": "ms-devlabs"
+    "public": true,
+    "baseUri": "https://ms-devlabs.gallery.vsassets.io/_apis/public/gallery/publisher/ms-devlabs/extension/team-calendar/2.0.22/assetbyname/dist/calendar.html",
+    "name": "Naseej Calendar",
+    "publisher": "MSabri"
 
 }
+// https://msabri.gallery.vsassets.io/_apis/public/gallery/publishers/MSabri/extension/naseej-calendar/2.0.19/assetbyname/dist/calendar.html

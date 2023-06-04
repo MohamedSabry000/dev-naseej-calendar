@@ -1,0 +1,39 @@
+{
+  "manifestVersion": 1,
+  "id": "dev-naseej-calendar",
+  "publisher": "MSabri",
+  "version": "1.0.0",
+  "name": "dev-naseej-calendar",
+  "description": "Track events important to your team, view and manage days off, quickly see when sprints start and end, and more.",
+  "public": false,
+  "categories": ["Azure Repos"],
+  "targets": [
+      {
+          "id": "Microsoft.VisualStudio.Services"
+      }
+  ],
+  "contributions": [
+      {
+          "id": "my-hub",
+          "type": "ms.vss-web.hub",
+          "targets": [
+              "ms.vss-code-web.code-hub-group"
+          ],
+          "properties": {
+              "name": "My Hub",
+              "uri": "./dist/calendar.html"
+          }
+      }
+  ],
+  "files": [
+      {
+          "path": "./dist/calendar.html",
+          "addressable": true
+      },
+      {
+          "path": "node_modules/azure-devops-extension-sdk/lib",
+          "addressable": true,
+          "packagePath": "lib"
+      }
+  ]
+}
