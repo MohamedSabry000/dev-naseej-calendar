@@ -176,7 +176,7 @@ export class AddEditDaysOffDialog extends React.Component<IAddEditDaysOffDialogP
                                 <Button onClick={this.props.onDismiss} text="Cancel" />
                                 <Observer enabled={this.okButtonEnabled}>
                                     {(props: { enabled: boolean }) => {
-                                        return <Button disabled={!props.enabled} onClick={this.onOKClick} primary={true} text="Ok" />;
+                                        return <Button disabled={!props.enabled} onClick={this.onOKClick} primary={true} text="Done" />;
                                     }}
                                 </Observer>
                             </ButtonGroup>
@@ -228,6 +228,7 @@ export class AddEditDaysOffDialog extends React.Component<IAddEditDaysOffDialogP
     };
 
     private onOKClick = (): void => {
+        console.log("4")
         let promise;
         if (this.props.event) {
             promise = this.props.eventSource.updateEvent(this.props.event, this.props.event.iterationId!, this.startDate, this.endDate);
@@ -240,10 +241,25 @@ export class AddEditDaysOffDialog extends React.Component<IAddEditDaysOffDialogP
                 this.selectedMemberId
             );
         }
+        this.sendMail(this.iteration!.id, this.startDate, this.endDate, this.selectedMemberName, this.selectedMemberId);
         promise.then(() => {
             this.props.calendarApi.refetchEvents();
         });
         this.props.onDismiss();
+    };
+
+    private sendMail = (iterationId: string, startDate: Date, endDate: Date, selectedMemberName: string, selectedMemberId: string) => {
+        let mailBody = `Hi ${selectedMemberName},\n\nYou have been marked as Out of Office for the following dates:\n\n`;
+        mailBody += `Start Date: ${formatDate(startDate, "YYYY-MM-DD")}\n`;
+        mailBody += `End Date: ${formatDate(endDate, "YYYY-MM-DD")}\n\n`;
+        mailBody += `Iteration: ${iterationId}\n\n`;
+        mailBody += "Thanks,\n";
+        mailBody += "Out of Office Bot";
+
+        console.log('====================================')
+        console.log(mailBody)
+        console.log('====================================')
+        window.open(`mailto:${selectedMemberId}?subject=Out of Office&body=${encodeURIComponent(mailBody)}`);
     };
 
     private onSelectTeamMember = (event: React.SyntheticEvent<HTMLElement>, item: IListBoxItem<{}>) => {

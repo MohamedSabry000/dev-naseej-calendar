@@ -1,10 +1,10 @@
-# Team Calendar Extension for Visual Studio Team Services
+# Naseej Calendar Extension for Visual Studio Team Services
 
 ![buildstatus](https://mseng.visualstudio.com/_apis/public/build/definitions/b924d696-3eae-4116-8443-9a18392d8544/5979/badge)
 
-Team Calendar helps busy teams stay on track and informed about important deadlines, sprint schedules, and upcoming milestones. It is the one place to see and manage the date important to your teams, including sprint schedule, days off (for individuals or the team), and custom events.
+Naseej Calendar helps busy teams stay on track and informed about important deadlines, sprint schedules, and upcoming milestones. It is the one place to see and manage the date important to your teams, including sprint schedule, days off (for individuals or the team), and custom events.
 
-Team Calendar installs into either a Visual Studio Team Services account or into Team Foundation Server.
+Naseej Calendar installs into either a Visual Studio Team Services account or into Team Foundation Server.
 
 ![screenshot](static/v2-images/calendar-screen-shot.png)
 
@@ -18,7 +18,7 @@ To learn more about Extensions, see the [overview of extensions](https://www.vis
 
 ## Install
 
-To try out the extension in your VSTS account, visit the [Team Calendar extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar) page on the Visual Studio Marketplace.
+To try out the extension in your VSTS account, visit the [Naseej Calendar extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar) page on the Visual Studio Marketplace.
 
 Don't have a [free] VSTS account? [Learn more](https://www.visualstudio.com/team-services/) about getting one.
 

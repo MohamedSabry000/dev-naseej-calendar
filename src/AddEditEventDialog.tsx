@@ -162,7 +162,7 @@ export class AddEditEventDialog extends React.Component<IAddEditEventDialogProps
                                 <Button onClick={this.props.onDismiss} text="Cancel" />
                                 <Observer enabled={this.okButtonEnabled}>
                                     {(props: { enabled: boolean }) => {
-                                        return <Button disabled={!props.enabled} onClick={this.onOKClick} primary={true} text="Ok" />;
+                                        return <Button disabled={!props.enabled} onClick={this.onOKClick} primary={true} text="Great" />;
                                     }}
                                 </Observer>
                             </ButtonGroup>
@@ -225,6 +225,7 @@ export class AddEditEventDialog extends React.Component<IAddEditEventDialogProps
     };
 
     private onOKClick = (): void => {
+        console.log("5")
         const excludedEndDate = new Date(this.endDate);
         excludedEndDate.setDate(this.endDate.getDate() + 1);
         if (this.category === "") {

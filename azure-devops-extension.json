@@ -2,8 +2,8 @@
   "manifestVersion": 1,
   "id": "naseej-calendar",
   "publisher": "MSabri",
-  "version": "2.0.19",
-  "name": "Team Calendar",
+  "version": "2.0.28",
+  "name": "Naseej Calendar",
   "description": "Track events important to your team, view and manage days off, quickly see when sprints start and end, and more.",
   "public": true,
   "categories": ["Azure Repos"],
@@ -26,18 +26,18 @@
   },
   "links": {
     "support": {
-      "uri": "https://github.com/Microsoft/vsts-team-calendar/issues"
+      "uri": "https://github.com/MohamedSabry000/dev-naseej-calendar/issues"
     }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/vsts-team-calendar"
+    "url": "https://github.com/MohamedSabry000/dev-naseej-calendar"
   },
   "badges": [
     {
-      "href": "https://github.com/Microsoft/vsts-team-calendar",
+      "href": "https://github.com/MohamedSabry000/dev-naseej-calendar",
       "uri": "https://mseng.visualstudio.com/_apis/public/build/definitions/b924d696-3eae-4116-8443-9a18392d8544/2715/badge",
-      "description": "Team Calendar CI build status"
+      "description": "Naseej Calendar CI build status"
     }
   ],
   "screenshots": [

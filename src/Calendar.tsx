@@ -271,6 +271,7 @@ class ExtensionContent extends React.Component {
         SDK.init();
         this.initialize();
         window.addEventListener("resize", this.updateDimensions);
+        console.log("componentDidMount");
     }
 
     private calcMonths(current: MonthAndYear, monthDelta: number): MonthAndYear {
@@ -323,7 +324,7 @@ class ExtensionContent extends React.Component {
      * Manually calculates available vertical space for calendar
      */
     private getCalendarHeight(): number {
-        var height = document.getElementById("naseej-calendar");
+        var height = document.getElementById("team-calendar");
         if (height) {
             return height.offsetHeight - 90;
         }
@@ -551,7 +552,7 @@ class ExtensionContent extends React.Component {
 }
 
 function showRootComponent(component: React.ReactElement<any>) {
-    ReactDOM.render(component, document.getElementById("naseej-calendar"));
+    ReactDOM.render(component, document.getElementById("team-calendar"));
 }
 
 showRootComponent(<ExtensionContent />);

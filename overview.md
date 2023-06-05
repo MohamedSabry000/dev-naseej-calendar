@@ -1,4 +1,4 @@
-Team Calendar helps busy teams stay on track and informed about important deadlines, sprint schedules, and upcoming milestones. Team Calendar is the one place to see and manage the date important to your teams, including sprint schedule, days off (for individuals or the team), and custom events.
+Naseej Calendar helps busy teams stay on track and informed about important deadlines, sprint schedules, and upcoming milestones. Naseej Calendar is the one place to see and manage the date important to your teams, including sprint schedule, days off (for individuals or the team), and custom events.
 
 ## Quick view of your sprint schedule
 
@@ -10,7 +10,7 @@ Learn how to [setup your sprint schedule](https://msdn.microsoft.com/Library/vs/
 
 ## Easily manage days off
 
-From your team calendar, mark days you (or anyone on your team) will be out of the office. Simply click a day and choose to add a day off. No more digging around the capacity settings page to set or manage days off.
+From your Naseej calendar, mark days you (or anyone on your team) will be out of the office. Simply click a day and choose to add a day off. No more digging around the capacity settings page to set or manage days off.
 
 ![ado](static/v2-images/add-day-off.png)
 
@@ -26,7 +26,7 @@ Visualize the availability of the team as you plan your team. Understand who is 
 
 ## Quick steps to get started
 
-Team Calendar automatically shows iterations, days off, and configured working days for your team (see links below for help with setting these things up).
+Naseej Calendar automatically shows iterations, days off, and configured working days for your team (see links below for help with setting these things up).
 
 1. Navigate to your project home and open the **Calendar** hub
 
@@ -47,7 +47,7 @@ Team Calendar automatically shows iterations, days off, and configured working d
 
 ## Known issues
 
-1. Auth-related HTTP errors when running Team Calendar on TFS 2015 Update 2. Upgrade to 2015 2.1.
+1. Auth-related HTTP errors when running Naseej Calendar on TFS 2015 Update 2. Upgrade to 2015 2.1.
 2. Changing a user's profile image (avatar) is not reflected in the calendar due to 12 hour image caching. Check back after 12 hours.
 
 ## Learn more

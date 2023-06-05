@@ -1,8 +1,6 @@
 {
     "public": true,
-    "baseUri": "https://ms-devlabs.gallery.vsassets.io/_apis/public/gallery/publisher/ms-devlabs/extension/team-calendar/2.0.22/assetbyname/dist/calendar.html",
+    "baseUri": "https://ms-devlabs.gallery.vsassets.io/_apis/public/gallery/publisher/ms-devlabs/extension/team-calendar/2.0.22/assetbyname",
     "name": "Naseej Calendar",
     "publisher": "MSabri"
-
 }
-// https://msabri.gallery.vsassets.io/_apis/public/gallery/publishers/MSabri/extension/naseej-calendar/2.0.19/assetbyname/dist/calendar.html

@@ -81,6 +81,7 @@ export class EditEventDialog extends Controls_Dialog.ModalDialogO<IEventDialogOp
      * shows an error message, or returns the edited note.
      */
     public onOkClick(): any {
+        console.log("1")
         this._buildCalendarEventFromFields().then(results => {
             if (this._contributedControl) {
                 this._contributedControl.onOkClick().then(event => {
@@ -565,6 +566,7 @@ export class EditFreeFormEventControl extends Controls.Control<IEventControlOpti
     }
 
     public onOkClick(): PromiseLike<any> {
+        console.log("2")
         return Promise.resolve({
             movable: true,
             description: this._$descriptionInput.val(),
@@ -673,6 +675,7 @@ export class EditCapacityEventControl extends Controls.Control<IEventControlOpti
     }
 
     public onOkClick(): any {
+        console.log("3")
         return Promise.resolve({
             iterationId: this._calendarEvent.iterationId,
             member: this._calendarEvent.member,
